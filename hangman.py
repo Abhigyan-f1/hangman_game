@@ -696,7 +696,7 @@ stages = [
 ]
 list = ['stortage', 'analytic', 'habilimented', 'schadenfreude', 'arrant', 'antidisestablishmentarianism', 'round', 'colonel', 'conception', 'narrative', 'economics', 'blinker', 'book', 'rural', 'accessory', 'artless', ]
 chosen_word = random.choice(list)
-print(chosen_word)
+#print(chosen_word)
 placeholder = chosen_word
 for item in chosen_word:
     placeholder = placeholder.replace(item,'_')
@@ -729,6 +729,7 @@ def correct_words():
             if wrong == 6:
                 game_over = True
                 print('you lose')
+                print(chosen_word)
         print(stages[wrong])
         if '_' not in display:
             game_over = True
